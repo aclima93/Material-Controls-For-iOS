@@ -31,8 +31,9 @@
   UIPageViewController *pageController;
   NSMutableDictionary *viewControllers;
   NSUInteger lastIndex;
-  BOOL disableDragging;
 }
+
+@synthesize disableDragging;
 
 - (instancetype)initWithDelegate:(id)delegate {
   if (self = [super init]) {
